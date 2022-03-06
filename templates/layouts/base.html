@@ -1,0 +1,151 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{request.title}}</title>
+	<link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand relen fw-bold text-dark" href="/">Relen</a>
+			<li class="relen text-dark ms-2 d-lg-none">+998 90 186-77-07</li>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+				<ul class="navbar-nav mb-2 mb-lg-0 header_helperr align-items-center margin-bottom">
+				
+					<a href="{% url 'main:index' %}#cat" class="cat">
+						<li class="nav-link Text pe-3 ps-4 post_text text-dark">{% translate "Kategoriyalar" %}<i
+								class="fas fa-arrow-down ms-3"></i></li>
+					</a>
+					<li class="">
+						<a class="nav-link Text pe-4 ps-4 post_text text-dark" href="{% url 'main:about' %}">
+							{% translate "Tovarlar" %} </a>
+					</li>
+
+					<div class="dropdown" style="margin-left:-30px !important">
+						<li class="nav-item dropdown">
+							<a class="nav-link lang-link text-dark" data-bs-toggle="dropdown" href="#">
+								{% for l in LANGUAGES %}
+								{% if l.0 == LANGUAGE_CODE %}
+								{{ l.1 }} <i class="fas fa-globe-europe"></i>
+								{% endif %}
+								{% endfor %}
+							</a>
+							<div class="dropdown-menu mennu animate__animated animate__fadeInUp">
+								{% for l in LANGUAGES %}
+								<a href="/{{ l.0 }}{{ request.get_full_path|slice:'3:'}}" class="dropdown-item">
+									{{ l.1 }}</a>
+								{% endfor %}
+							</div>
+						</li>
+					</div>
+					<li class="relen text-dark ms-5">+998 90 186-77-07</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-light d-lg-none">
+		<div class="container">
+			<ul class="d-flex mb-2  d-lg-none mb-lg-0 header_helper  margin-bottom" style="padding-left:0 !important;">
+				<a href="#cat" class="cat">
+					<li class=" Text post_text text-dark">{% translate "Kategoriyalar" %}<i class="fas fa-arrow-down ms-1  "></i>
+					</li>
+				</a>
+				<li class="">
+					<a class=" Text   post_text text-dark" href="{% url 'main:about' %}">
+						{% translate "Tovarlar" %} </a>
+				</li>
+
+				<div class="dropdown">
+					<li class="nav-item dropdown">
+						<a class=" lang-link text-dark" data-bs-toggle="dropdown" href="#">
+							{% for l in LANGUAGES %}
+							{% if l.0 == LANGUAGE_CODE %}
+							{{ l.1 }} <i class="fas fa-globe-europe"></i>
+							{% endif %}
+							{% endfor %}
+						</a>
+						<div class="dropdown-menu mennu animate__animated animate__fadeInUp">
+							{% for l in LANGUAGES %}
+							<a href="/{{ l.0 }}{{ request.get_full_path|slice:'3:'}}" class="dropdown-item">
+								{{ l.1 }}</a>
+							{% endfor %}
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+
+	{% block content %}
+
+	{% endblock %}
+
+	<div class="footer">
+		<div class="container">
+			<div class="position-relative">
+				<p class="d-flex">
+					<li class="mt-5">
+						<img src="{% static 'img/fase.png' %}" height="50px" class="rounded-pill" alt="">
+						<span class="ms-3">
+							<img src="{% static 'img/ins.jpg' %}" height="50px" class="rounded-pill" alt="">
+						</span>
+						<span class="ms-3">
+							<img src="{% static 'img/tg.png' %}" height="50px" class="rounded-pill" alt="">
+						</span>
+					</li>
+				</p>
+				<li class="relen fw-bold uyu">
+					RELEN
+				</li>
+				<p class="d-flex">
+					<li class="relen uyu">{% translate "RELEN:Lenoleum" %}
+						<span class="uyu" style="white-space: nowrap !important;"> +998 (90) 186-77-07</span>
+					</li>
+
+					<li class="uyu mt-3 fw-bold">{% translate "Veb-sayt dasturchisi : " %} ismoillmirabbosoff@gmail.com</li>
+				</p><br>
+			</div>
+
+
+		</div>
+	</div>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'vendor/particlesJs/particles.js' %}"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+
+
+
+
+</body>
+
+</html>

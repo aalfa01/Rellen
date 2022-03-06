@@ -1,0 +1,44 @@
+{% extends 'layouts/base.html' %}
+{% load static i18n %}
+
+{% block content %}
+<div class="container text-center mt-3">
+  <h1>{% translate "Bizning mahsulotlarimiz" %}</h1>
+    <span>{% translate "Quyidagi ko'rinishda" %}</span>
+  </div>
+  
+  
+  <div class="shell">
+    <div class="container">
+      <div class="row">
+        
+        {% for row in object_list %}
+        <div class="col-md-3">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img">
+              <a href="{% url 'main:view' row.id %}" >
+                  <img src="{{ row.image.all.0.image.url }}" alt="{{im.name}}" height="200"/>
+              </a>
+            </div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <a href="{% url 'main:cat'  row.post.id  %}" style="display: inline;" >{{ row.post.name|truncatewords:1 }}</a>
+              </div>
+              <div class="title-product">
+                <h3>{{ row.subject }}</h3>
+              </div>
+              <div class="description-prod">
+                <p>{{ row.comment }}</p>
+              </div>
+              <div class="card-footer">
+                <div class="wcf-left"><a href="{% url 'main:view' row.id %}" class="price text-dark">{% translate "Davomi.." %}</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}

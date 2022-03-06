@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-22 09:15+0500\n"
+"PO-Revision-Date: 2021-10-22 09:18+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Poedit 3.0\n"
+
+#: main/views.py:19
+msgid "Bosh sahifa"
+msgstr "Главная страница "
+
+#: main/views.py:39
+msgid "Maqolalar"
+msgstr "Статьи"
+
+#: main/views.py:61 templates/layouts/base.html:37
+#: templates/layouts/base.html:73 templates/layouts/base.html:107
+msgid "Tovarlar"
+msgstr "Товары"
+
+#: relen/settings.py:126
+msgid "O'zbekcha"
+msgstr "Узбекские "
+
+#: relen/settings.py:127
+msgid "Ruscha"
+msgstr "Русский"
+
+#: templates/layouts/base.html:32 templates/layouts/base.html:68
+#: templates/layouts/base.html:102
+msgid "Kategoriyalar"
+msgstr "Категории"
+
+#: templates/layouts/base.html:154
+msgid "RELEN:Lenoleum"
+msgstr "РЕЛЕН: Ленолеум"
+
+#: templates/layouts/base.html:158
+msgid "Veb-sayt dasturchisi : "
+msgstr "Разработчик сайта:"
+
+#: templates/main/index.html:18
+msgid "---Bunga mos keladi---"
+msgstr "--- Это подходит ---"
+
+#: templates/main/index.html:20 templates/main/index.html:29
+msgid "Ilhomlantiruvchi mahsus fotosuratlardan kategoriyalar palitrasi! "
+msgstr "Палитра категорий из вдохновляющих специальных фотографий!"
+
+#: templates/main/index.html:22
+msgid "Rang mosligi"
+msgstr "Совместимость цветов"
+
+#: templates/main/index.html:27
+msgid "---Ancha qulay---"
+msgstr "--- Очень удобно ---"
+
+#: templates/main/index.html:31
+#, fuzzy, python-format
+#| msgid "100% qulaylik"
+msgid "100%% qulaylik"
+msgstr "100%% удобство"
+
+#: templates/main/index.html:45
+msgid "uslub va rang kobinatsiyasi"
+msgstr "стиль и сочетание цветов"
+
+#: templates/main/index.html:50
+msgid "Swatch korinishi "
+msgstr "Образец просмотра"
+
+#: templates/main/index.html:53
+msgid "Xona korinishi"
+msgstr "Вид комнаты"
+
+#: templates/main/index.html:58
+msgid "Saralash : "
+msgstr "Сортировка:"
+
+#: templates/main/index.html:58
+msgid "Tanlangan"
+msgstr "Выбрано"
+
+#: templates/main/index.html:77
+msgid "Barcha tovarlarni korish"
+msgstr "Посмотреть все товары"
+
+#: templates/main/index.html:113
+msgid "har yili amalga oshirilayotgan loyihalar,"
+msgstr "проектов, реализуемых ежегодно,"
+
+#: templates/main/index.html:113
+msgid "biz ko'kamlikni hush koramiz!"
+msgstr "мы любим зелень!"
+
+#: templates/main/index.html:127 templates/main/index.html:145
+#: templates/main/index.html:157
+msgid ""
+"LG Hausys PVX qoplamasining afzalligi: - ajoyib tasvir realizmi. Rasmlar "
+"yuqori aniqlikdagi transfer bosib chiqarish texnologiyasi yordamida chop "
+"etiladi. Transferli bosib chiqarish texnologiyasi - bosma qatlamning "
+"gözenekli bo'lmagan yuzasiga bosma siyohni juda aniq taqsimlash orqali "
+"yuqori aniqlikka erishiladi. - antistatik - qoliplarning shakllanishiga "
+"qarshilikni aniqlash. LG Hausys - shakllanmaydi. - hidning etishmasligi. - "
+"ultrabinafsha nurlanishiga qarshi immunitet. - Yuqori kuch. - yuqori "
+"shovqinni yutish qobiliyati. - Ekologik toza - barcha materiallar sog'liq "
+"uchun xavfsiz va hech qanday zararli moddalarni bug'latmaydi. - Harakat "
+"yuqori bo'lgan joylar uchun ideal."
+msgstr ""
+"Преимущество ПВХ-покрытия LG Hausys: - Отличная реалистичность изображения. "
+"Изображения печатаются с использованием технологии трансферной печати с "
+"высоким разрешением. Технология трансферной печати - высокая точность "
+"достигается за счет очень точного распределения печатной краски на "
+"непористой поверхности печатного слоя. - антистатический - определение "
+"устойчивости к образованию плесени. LG Hausys - не образован. - отсутствие "
+"запаха. - невосприимчивость к ультрафиолетовому излучению. - Высокое "
+"напряжение. - Способность поглощать высокий шум. - Экологичность - все "
+"материалы безопасны для здоровья и не испаряют вредных веществ. - Идеально "
+"подходит для районов с высокой проходимостью."
+
+#: templates/main/index.html:132
+msgid "Barcha tovarlani koring!"
+msgstr "Посмотреть все товары!"
+
+#: templates/main/index.html:169
+msgid "RELEN: Bizning mahsulotlar"
+msgstr "RELEN: Наши продукты"
+
+#: templates/main/index.html:206
+msgid "BIZ BILAN BOG'LANISH"
+msgstr "СВЯЗАТЬСЯ С НАМИ"
+
+#: templates/main/index.html:213
+msgid "Yuborish"
+msgstr "Отправить"
+
+#: templates/main/index.html:226
+msgid "Linolyum"
+msgstr "Линолеум"
+
+#: templates/main/index.html:227
+msgid ""
+"Bu sahifada siz linolyum turkumidagi kompaniyalar takliflari haqida "
+"ma'lumotni topishingiz mumkin. Takliflarda O'zbekiston bozorida ishlaydigan "
+"etkazib beruvchilarning narxlari, batafsil tavsifi va aloqa ma'lumotlari "
+"ko'rsatilgan. Linolyum toifasidagi kompaniyalar haqidagi ma'lumotlar Prom.uz "
+"veb -saytiga har bir kompaniya kiritilgan vaqtda tekshirilgan va ishonchli "
+"bo'lgan. Hozirgi vaqtda ba'zi etkazib beruvchilar haqidagi ma'lumotlar "
+"(manzili, telefon raqami, joylashuvi yoki tovarlar va xizmatlar ro'yxati) "
+"o'zgargan bo'lishi mumkin. Kompaniyalar ro'yxati doimiy ravishda kengayib "
+"bormoqda. Shuningdek, ularning aloqa ma'lumotlari va boshqa ma'lumotlar "
+"muntazam yangilanadi."
+msgstr ""
+"На этой странице вы найдете информацию о предложениях компаний в категории "
+"линолеум. В предложениях указаны цены, подробное описание и контактная "
+"информация поставщиков, работающих на узбекском рынке. Информация о "
+"компаниях категории линолеум была проверена и достоверна на момент входа "
+"каждой компании на сайт Prom.uz. В настоящее время информация о некоторых "
+"поставщиках (адрес, номер телефона, местонахождение или перечень товаров и "
+"услуг) могла измениться. Список компаний постоянно расширяется. Также их "
+"контактная информация и другая информация регулярно обновляется."
+
+#: templates/main/product.html:6
+#, fuzzy
+#| msgid "RELEN: Bizning mahsulotlar"
+msgid "Bizning mahsulotlarimiz"
+msgstr "RELEN: Наши продукты"
+
+#: templates/main/product.html:7
+msgid "Quyidagi ko'rinishda"
+msgstr "В представлении ниже"
+
+#: templates/main/product.html:34
+msgid "Davomi.."
+msgstr "Подробнее .."
+
+#~ msgid "Bizning ishimiz"
+#~ msgstr "Наша работа"
+
+#~ msgid ""
+#~ "Nima uchun biz bilan ishlash qulay va foydali?! - Siz mahsulot haqida "
+#~ "barcha batafsil ma'lumotlarni olasiz - Xaridor bilan birgalikda biz "
+#~ "binolarning texnik talablariga muvofiq kerakli qoplamani tanlaymiz PVX "
+#~ "qoplamasi sotib olingan joyda. - Agar kerak bo'lsa, biz PVX qoplamalarini "
+#~ "o'rnatish uchun professional ustalar guruhini ta'minlaymiz. - Biz 5 "
+#~ "yildan 12 yilgacha bo'lgan mahsulotlarga kafolat beramiz (materialning "
+#~ "qalinligiga qarab) mahsulotlarni o'rnatish va ishlatish uchun barcha "
+#~ "texnik qoidalar. - Toshkentdagi ombordan tovarlarni o'z vaqtida "
+#~ "jo'natish. - Har bir mijozga moslashuvchan yondashuv.Axir, bizning "
+#~ "maqsadimiz sizga pul ishlash emas, balki o'zaro manfaatli shartlarda uzoq "
+#~ "muddatli hamkorlikni yo'lga qo'yishdir!"
+#~ msgstr ""
+#~ "Почему с нами удобно и полезно работать ?! - Вы получите все подробности "
+#~ "о товаре - Вместе с покупателем мы подберем желаемое покрытие в "
+#~ "соответствии с техническими требованиями помещения по месту покупки ПВХ "
+#~ "покрытия. - При необходимости мы предоставляем бригаду профессиональных "
+#~ "мастеров для установки ПВХ покрытий. - Гарантия на изделия от 5 до 12 лет "
+#~ "(в зависимости от толщины материала) при соблюдении всех технических "
+#~ "правил монтажа и эксплуатации изделий. - Своевременная доставка товара со "
+#~ "склада в Ташкенте. - Гибкий подход к каждому клиенту, ведь наша цель - не "
+#~ "заработать вам деньги, а наладить долгосрочное сотрудничество на "
+#~ "взаимовыгодных условиях!"
+
+#~ msgid "Sizni qiziqtirishi mumkin"
+#~ msgstr "Вам может быть интересно"
+
+#~ msgid "Pol uchun Kley"
+#~ msgstr "Клей для Пола"
+
+#~ msgid "Plintus"
+#~ msgstr "Плинтус"

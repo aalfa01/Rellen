@@ -1,0 +1,29 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="col-lg-1">
+			
+		</div>
+		<div class="col-lg-5">
+			<li>
+				<img src="{{ post.image.all.0.image.url }}"width="100%"style="max-height:500px" alt="">
+			</li>
+		</div>
+
+		<div class="col-lg-5">
+			<li class="mt-4">
+				<h1 class="fw-bold">{{ post.subject }}</h1>
+				<div>
+					{{ post.comment }}
+				</div>
+			</li>
+		</div>
+	</div>
+
+</div>
+<br><br>
+{% endblock %}
+
